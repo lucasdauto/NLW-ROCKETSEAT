@@ -2,12 +2,14 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 
 //icons e images
-import logoImg from '../../assets/images/logo.svg';
-import backIcon from '../../assets/images/icons/back.svg';
+
 
 //CSS
 import './styles.css';
+
+//Componentes
 import PageHeader from '../../components/PageHeader';
+import TeacherItem from '../../components/TeacherItem';
 
 function TeacherList() {
     return (
@@ -30,6 +32,10 @@ function TeacherList() {
                     </div>
                 </form>
             </PageHeader>
+
+            <main>
+                <TeacherItem />                
+            </main>
         </div>
     )
 }
